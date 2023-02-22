@@ -1,0 +1,168 @@
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** ROOT STYLES START **************/
+:root{
+    --main-bg-color: #16a085;
+    --main-card-color: #fff;
+    --main-head-color: #000;
+    --main-subtitle-color: #aaacb6;
+    --card-text-color: #5c5c5c;
+    --card-number-color: #000;
+}
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 600;
+    background-color: var(--main-bg-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/************** /ROOT STYLES END **************/
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** MAIN STYLES START **************/
+/* .site-amin {
+} */
+/* .container {
+} */
+
+.wheel__wrapper {
+    margin-top: 110px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    width: 570px;
+    /* padding: 40px 55px; */
+    padding-top: 40px;
+    padding-right: 56px;
+    padding-bottom: 195px;
+    padding-left: 55px;
+    background-color: var(--main-card-color);
+    background-image: url("./img/bicycle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% - 3px) calc(50% + 161px);
+    border-radius: 5px;
+    box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+}
+
+.wheels__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.wheel__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+.wheels__img {
+    border-radius: 50%;
+    padding: 6px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--main-subtitle-color);
+}
+
+.wheels__img:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.wheels__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 350;
+    font-size: 14px;
+    color: var(--main-subtitle-color);
+}
+
+.wheels__list {
+    width: 100%;
+}
+
+.wheels__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.wheels__item:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.wheels__item--title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--card-text-color);
+}
+
+.wheel__item--price {
+    font-size: 22px;
+}
+
+.wheels__item--total {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--card-text-color);
+}
+
+/************** MAIN STYLES END **************/
